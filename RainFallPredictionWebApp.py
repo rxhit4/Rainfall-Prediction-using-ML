@@ -6,8 +6,15 @@ Created on Tue Nov 19 00:54:13 2024
 """
 
 import numpy as np
+import pandas as pd
 import pickle
 import streamlit as st 
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.utils import resample #to manage class imbalance
+from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 
 
 #LOADING THE SAVED PICKLE MODEL
