@@ -9,7 +9,6 @@ import numpy as np
 import pandas as pd
 import pickle
 import streamlit as st 
-import seaborn as sns
 from sklearn.utils import resample #to manage class imbalance
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 from sklearn.ensemble import RandomForestClassifier
