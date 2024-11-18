@@ -9,7 +9,7 @@ import pickle
 import streamlit as st
 
 # LOADING THE SAVED PICKLE MODEL
-loaded_model = pickle.load(open("C:/Users/Rohit Btech/Desktop/DEPLOYML/trained_model.sav", 'rb'))
+loaded_model = pickle.load(open("trained_model.sav", 'rb'))
 
 # CREATING A FUNCTION FOR PREDICTION
 def rainfall_prediction(input_data):
